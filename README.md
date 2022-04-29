@@ -1,1 +1,1 @@
-# Kimchi-to-picture
+# Kimchi-to-capture
