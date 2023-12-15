@@ -9,7 +9,7 @@
 손을 그려주기 위해 Mediapipe 라이브러리 또한 사용하였습니다.
 
 ## Preview
-![capture 2023-12-15 09_23_19](https://github.com/stev3j/Kimchi-to-capture/assets/103572569/47f353b4-8348-4b00-9415-5384fda3cc56)
+![capture 2023-12-15 09_42_13](https://github.com/stev3j/Kimchi-to-capture/assets/103572569/e0bd0035-8eb2-4a14-a494-66a374e20a63)
 
 ## Developer
 - [stev3j](https://github.com/stev3j)
