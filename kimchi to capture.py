@@ -26,7 +26,7 @@ angle = file[:,:-1].astype(np.float32) # 각도
 label = file[:,-1].astype(np.float32) # 라벨
 
 knn = cv.ml.KNearest_create() # 최근접 이웃 알고리즘
-knn.train(angle, cv.ml.ROW_SAMPLE, label) # 알고리즘 학습시키기
+knn.train(angle, cv.ml.ROW_SAMPLE, label) # 각도와 라벨로 학습시키기
 
 cap = cv.VideoCapture(0) # 웹캠 켜기
 
@@ -66,8 +66,8 @@ while cap.isOpened(): # 카메라가 열려있을 때
             ret, results, neightbours, dist = knn.findNearest(data, 3)
             idx = int(results[0][0]) # 결과
 
-            # 김치 재스쳐
-            if idx in kimchi_gesture.keys(): # 결과가 김치 안에 있다면
+            # 김치 재스쳐 인식 시
+            if idx in kimchi_gesture.keys(): 
                 cv.imwrite("capture " + nowDatetime_path + ".jpg", img)
 
             mp_drawing.draw_landmarks(img, res, mp_hands.HAND_CONNECTIONS) # 선 그어주기
